@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img\12.webp" rel="icon">
+    <title>实验二</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        #box {
+        border: 1px solid rgb(1, 16, 27);/*设置盒子的边框和颜色*/
+        width: 200px;
+        height: 200px;
+        margin: 5px auto;/*离顶部200px，并且居中*/
+        background-color: #5eb2b2;/*盒子的背景颜色*/
+        position: relative;/*定位*/
+        }
+        p{
+        width: 200px;
+        height: 80px;
+        text-align: center;/*将文本居中*/
+        line-height: 100px;/*设置行高*/
+        font-size: 45px;/*字体大小*/
+        color: #ffff00;
+        }
+        #anniu {
+        width: 90px;
+        height: 40px;
+        background-color:#00aaff;
+        position: absolute;
+        bottom: 40px;/*距离底部100px*/
+        left: 50%;
+        margin-left: -50px;
+        color: #ffffff;
+        font-size: 18px
+        }
+        #txt{
+        position:relative;
+        left:50px;
+        top:10px;
+	    float: left;
+            width:240px;
+            height:30px;
+            /* margin: 20px auto; */
+			background-color: rgb(131, 223, 220);
+            /* line-height:200px; */
+            text-align:center;
+            color:rgb(12, 10, 11);
+            font-size: 20px;
+            overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+        }
+        </style>
+        <script>
+            function area(a,b,c)
+            {
+                s=(parseInt(a.value)+parseInt(b.value))/2*c.value;
+                alert("梯形面积为"+s);
+            }
+            function startTime(){
+            var today=new Date();
+            var n=today.getFullYear();
+            var y=today.getMonth(1) ;
+            var d=today.getDate();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();// 在小于10的数字前加一个'0'
+            //y=checkTime(y);
+            m=checkTime(m);//补位处理
+            s=checkTime(s);
+            document.getElementById('txt').innerHTML=n+"年"+(y+1)+"月"+d+"日"+":"+h+":"+m+":"+s;
+            //document.getElementById可返回对拥有指定 ID 的第一个对象的引用。
+            //nnerHTML可获取或设置指定元素标签内的 html内容，
+            //从该元素标签的起始位置到终止位置的全部内容(包含html标签)
+               t=setTimeout(function(){startTime()},500);
+            }
+            function checkTime(i){
+                if (i<10){
+                i="0" + i;
+                }
+                return i;
+            }
+            </script>
+</head>
+<body background=" img\24.jpg" onLoad="startTime()">
+    <form>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;求梯形面积</h3>
+        上底：<input type="text" name="a"><br>
+        下底：<input type="text" name="b"><br>
+        高度：<input type="text" name="c"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" onclick="area(a,a,c);" value="结果"><br>
+    </form>
+    <div>
+        <div id="txt"></div>
+        </div>
+    <div id="box">
+        <p id="wenben">随机点名</p>
+        <input type="button" value="开始点名" id="anniu">
+       </div>
+</body>
+<script>
+    var wenben = document.getElementById("wenben")
+    var anniu = document.getElementById("anniu")
+    var timer //定义计时器            
+    var arr = ['刘佳','陈笛','于方','吴恩','郑渡']
+    var test = true
+    anniu.onclick = function() {
+     if (test) {
+      start()
+      anniu.innerHTML = "结束"
+      test = false
+     } else {
+      stop()
+      anniu.innerHTML = "开始"
+      test = true
+     }
+    }
+    function start() { /*开始*/
+     timer = setInterval(function random() {
+      var index = parseInt(Math.random() * arr.length)
+      wenben.innerHTML = arr[index]
+     }, 50);
+    }
+    function stop() { /*结束*/
+     clearInterval(timer)
+    }     
+    </script>
+    <br>
+    <h1 align="center"><a href=jisuanqi.html>计算器</a></h1><br>
+    <h2 align="right"><a href=index.html>返回首页</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+</html>
