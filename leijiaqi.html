@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img\12.webp" rel="icon">
+    <title>累加器</title>
+    <style>
+        a{text-decoration:none;}
+    </style>
+    <script>
+        function disa(){
+            var n=prompt("请输入1-100范围内数字");
+            var i;
+            var sum=0;
+            if(n<=100){
+                for(i=1;i<=n;i++){
+                    sum=sum+i;
+                }
+                document.write("计算结果为"+sum);
+                alert("计算结果为"+sum);
+                console.log("计算结果为"+sum);
+            }
+            else{
+                document.write("该数字不在可加范围内");
+                alert("该数不在可加范围内"); 
+                console.log("该数字不在可加范围内");
+            }
+        }
+    </script>
+    <style>
+        input{
+            width: 250px;
+            height: 100px;
+            background-color: #65a8d4;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            margin: auto;
+        }
+    </style>
+</head>
+<body background="img/23.jpg">
+    <center>
+    <form>
+        <input type="button" onclick="disa()" value="1-100累加计算">
+    </form>
+    </center>
+    <h2 align="center"><a href=index.html>返回首页</a></h2>
+</body>
+</html>
