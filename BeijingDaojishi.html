@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img\12.webp" rel="icon">
+    <title>背景&倒计时</title>
+    <script>
+        function countDown(){
+            //获取初始时间
+            var time = document.getElementById("Time");
+            //获取到id为time标签中的数字时间
+            if(time.innerHTML == 0){
+                //等于0时清除计时，并跳转该指定页面
+                window.location.href="index.html";
+            }else{
+                time.innerHTML = time.innerHTML-1;
+            }
+        }
+        //1000毫秒调用一次
+        window.setInterval("countDown()",1000);
+        function wkey(obj){
+    alert(obj.keyCode);
+    if(obj.keyCode==32){
+        alert("按的是空格键");
+    }
+}
+    </script>
+    <style>
+        #Time,#p{
+            font-size: 80px;
+            text-align: center;
+        }
+        #Font,#p{
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onkeyup="wkey(event)">
+    <font color="blue">
+        <p id="Time" >10</p>
+        </font>
+        <p id="Font">返回首页</p>
+        <script>
+            function Focus()
+            {
+                document.bgColor="pink";
+            }
+            function Lose()
+            {
+                document.bgColor="sky blue";
+            }
+            function changeColor(obj,color){
+        obj.bgColor=color;
+    }
+    function wkey(obj){
+        alert(obj.keyCode);
+        if(obj.keyCode==32){
+            aler("空格键")
+        }
+    }
+        </script>
+        <input type="button" onfocus="Focus()" value="获得失去焦点触发事件"
+            onblur="Lose()">
+</body>
+</html>
