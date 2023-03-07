@@ -1,0 +1,370 @@
+/* 格式清零（初始化） */	
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	/* 把点去掉 */
+   list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+}
+img{
+	/* 边框 */
+	border: none;
+}
+a{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	/* 把点去掉 */
+   list-style: none;
+}
+body{
+	font-family: "微软雅黑";
+}
+img{
+	/* 边框 */
+	border: none;
+}
+a{
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#container{
+	width: 100%;
+}
+#header{
+	width: 100%;
+	height: 140px;
+}
+#nav{
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+}
+#navCenter{
+	width: 1226px;
+	height: 40px;
+	margin: 0 auto;
+	/* 位置居中 */
+}
+#navCenter ul{
+	float: left;
+	margin-top: 16px;
+}
+#navCenter ul li{
+	float: left;
+	line-height: 14px;
+	font-size: 12px;
+	/* 右边框 */
+	border-right: 1px solid #424242;
+}
+#navCenter ul li a{
+	color: #b0b0b0;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+#navCenter ul .lastli{
+	border: none;
+}
+#navCenter ul li a:hover{
+	color: #e0e0e0;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#navRightCar{
+	float: right;
+	width: 120px;
+	height: 40px;
+	background-color: #424242;
+	/* 字高 */
+	line-height: 40px;
+	/* 设置父级元素div里面的内容水平居中对齐 */
+	text-align: center;
+}
+#navRightCar a{
+	color: #B0B0B0;
+	font-size: 12px;
+}
+#navRightCar a:hover{
+	color: #ff6700;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#navRightCar:hover{
+	background-color: aliceblue;
+}
+#navRighLogin{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	/* 设置父级元素div里面的内容水平居中对齐 */
+	text-align: center;
+	margin-right: 15px;
+}
+#navRighLogin a{
+	color: #B0B0B0;
+	font-size: 12px;
+}
+#navRighLogin span{
+	color: #424242;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#navRighLogin a:hover{
+	color: #E0E0E0;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#menu{
+	width: 100%;
+	height: 100px;
+}
+#menuCenter{
+	width: 1226px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#logo{
+	float: left;
+	margin-top: 22px;
+}
+#logo img{
+	width: 56px;
+	height: 56px;
+}
+#menuCenter ul{
+	float: left;
+	margin-left: 145px;
+}
+#menuCenter ul li{
+	float: left;
+	/* 右内边距 */
+	padding-right: 15px;
+	line-height: 100px;
+	font-size: 16px;
+}
+#menuCenter ul li a{
+	color: #333;
+}
+#menuCenter ul li a:hover{
+	color: #FF6700;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#searchBthBox{
+	float: right;
+	border: 1px solid #E0E0E0;
+	width: 52px;
+	height: 50px;
+	margin-top: 22px;
+}
+#searchBthBox span{
+	line-height: 50px;
+	margin-left: 20px;
+}
+#searchTexBox{
+	float: right;
+	border: 1px solid #E0E0E0;
+	height: 50px;
+	width: 250px;
+	margin-top: 22px;
+}
+#searchTex{
+	/* 取消轮廓线 */
+	outline: none;
+	border: none;
+	line-height: 40px;
+	margin-left: 5px;
+	
+}
+#middle{
+	width: 100%;
+	height: 460px;
+}
+#middleCenter{
+	width: 1226px;
+	height: 460px;
+	margin: 0 auto;
+	/* 位置居中 */
+	background-image: url(img/3\(1\).jpg);
+}
+#middlelafe{
+	width: 20%;
+	height: 460px;
+	background-color: #69656599;
+	/* 透明度  0透明 1不透明 */
+	opacity: 0.9;
+}
+#middlelafe ul{
+	float: left;
+	margin-left: 35px;
+}
+#middlelafe ul li{
+	line-height: 45px;
+}
+#middlelafe ul li a{
+	color: #ffffff;
+}
+#middlelafe ul li a:hover{
+	color: #FF6700;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+} 
+a{
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#container{
+	width: 100%;
+}
+#header{
+	width: 100%;
+	height: 140px;
+}
+#nav{
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+}
+#navCenter{
+	width: 1226px;
+	height: 40px;
+	margin: 0 auto;
+	/* 位置居中 */
+}
+#navCenter ul{
+	float: left;
+	margin-top: 16px;
+}
+#navCenter ul li{
+	float: left;
+	line-height: 14px;
+	font-size: 12px;
+	/* 右边框 */
+	border-right: 1px solid #424242;
+}
+#navCenter ul li a{
+	color: #b0b0b0;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+#navCenter ul .lastli{
+	border: none;
+}
+#navCenter ul li a:hover{
+	color: #e0e0e0;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#navRightCar{
+	float: right;
+	width: 120px;
+	height: 40px;
+	background-color: #424242;
+	/* 字高 */
+	line-height: 40px;
+	/* 设置父级元素div里面的内容水平居中对齐 */
+	text-align: center;
+}
+#navRightCar a{
+	color: #B0B0B0;
+	font-size: 12px;
+}
+#navRightCar a:hover{
+	color: #ff6700;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#navRightCar:hover{
+	background-color: aliceblue;
+}
+#navRighLogin{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	/* 设置父级元素div里面的内容水平居中对齐 */
+	text-align: center;
+	margin-right: 15px;
+}
+#navRighLogin a{
+	color: #B0B0B0;
+	font-size: 12px;
+}
+#navRighLogin span{
+	color: #424242;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#navRighLogin a:hover{
+	color: #E0E0E0;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#menu{
+	width: 100%;
+	height: 100px;
+}
+#menuCenter{
+	width: 1226px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#logo{
+	float: left;
+	margin-top: 22px;
+}
+#logo img{
+	width: 56px;
+	height: 56px;
+}
+#menuCenter ul{
+	float: left;
+	margin-left: 145px;
+}
+#menuCenter ul li{
+	float: left;
+	/* 右内边距 */
+	padding-right: 15px;
+	line-height: 100px;
+	font-size: 16px;
+}
+#menuCenter ul li a{
+	color: #333;
+}
+#menuCenter ul li a:hover{
+	color: #FF6700;
+	/* 将a标签的下划线去掉 */
+	text-decoration: none;
+}
+#searchBthBox{
+	float: right;
+	border: 1px solid #E0E0E0;
+	width: 52px;
+	height: 50px;
+	margin-top: 22px;
+}
+#searchBthBox span{
+	line-height: 50px;
+	margin-left: 20px;
+}
+#searchTexBox{
+	float: right;
+	border: 1px solid #E0E0E0;
+	height: 50px;
+	width: 250px;
+	margin-top: 22px;
+}
+#searchTex{
+	/* 取消轮廓线 */
+	outline: none;
+	border: none;
+	line-height: 40px;
+	margin-left: 5px;
+	
+}
